@@ -1,0 +1,33 @@
+body
+    div
+      div  
+        | Nick: 
+        input(type='text', name='nick', value='')
+        span.nick 'must be unique and required'
+      div
+        | Nombres: 
+        input(type='text', name='nombres', value='')
+        span.nombres 'its required'
+      div
+        | Apellidos: 
+        input(type='text', name='apellidos', value='')
+        span.apellidos 'its required'
+      div
+        | Contraseña: 
+        input(type='password', name='password', value='')
+        span.password 'its required'
+      div
+        | Rol: 
+        select(name='rol')
+            option(value="") 
+            option(value="admin") Admin
+            option(value="operador") Operador
+            option(value="administrativo") Administrativo
+        span.rol 'its required'
+      div
+        | Correo: 
+        input(type='text', name='correo', value='')
+        span.correo 'must be correct and required'
+    button(onclick='submit()') Submit
+    script
+      include index.js

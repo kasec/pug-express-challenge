@@ -1,0 +1,29 @@
+div Users
+  table
+    thead
+      tr
+        th Nick
+        th Nombres
+        th Apellidos
+        th Rol
+        th Correo
+    tbody
+      each user in users
+        tr
+            td 
+              |#{user.nick}
+            td
+              |#{user.nombres}
+            td
+              |  #{user.apellidos}
+            td
+              |  #{user.rol}
+            td
+              |  #{user.correo}
+            td
+              a(href="/user/"+user.id)  editar
+            td
+              button(onclick="deleteUser(" + user.id + ")")  borrar
+
+  script
+      include index.js
