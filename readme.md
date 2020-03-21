@@ -1,4 +1,4 @@
-#Challenge with Express, Pug & Postgres
+# Challenge with Express, Pug & Postgres
 
 Steps to run:
 ```bash
@@ -8,9 +8,9 @@ Steps to run:
 thats it
 you can check how it works
 
-mysql connection was with mysql instead postgres, because i installed before mysql
+My databse connection was with mysql instead postgres, because i installed before mysql
 
-> you must create .env file in source dir with follow properties
+> You must create .env file in source dir with follow properties
 
 ```env
 PORT=[insert port] // without [], "". just raw data.
@@ -19,3 +19,5 @@ USER_DB=[insert user]
 PASS_DB=[insert password]
 DATABASE=[insert database name]
 ```
+
+In my case a create database, you have to create empty datbase, the used tables will be created theyself.
